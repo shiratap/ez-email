@@ -1,14 +1,19 @@
 {
   "name": "ez-email",
-  "version": "1.0.0",
-  "description": "",
+  "version": "1.0.1",
+  "description": "ez-email is a package built to get fast email functionality in your node application",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "Repository": "https://github.com/shiratap/ez-email",
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "email",
+    "ez-email",
+    "ez",
+    "ez email"
+  ],
+  "author": "shiratap",
   "license": "MIT",
   "dependencies": {
     "dotenv": "^8.2.0",

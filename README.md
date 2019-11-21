@@ -20,11 +20,11 @@ const EZE = require('ez-email');
 
 ### Simple example with ez-email:
 
-<img src="./assets/simple.png" width="400"/>
+<img src="https://raw.githubusercontent.com/shiratap/ez-email/master/assets/simple.png" width="400"/>
 
 ### Result:
 
-<img src="./assets/result.png" width="300"/>
+<img src="https://raw.githubusercontent.com/shiratap/ez-email/master/assets/result.png" width="300"/>
 
 ## Recommended: Use a .env file for email credentials
 
@@ -104,4 +104,6 @@ will give you an error if your credentials aren't correct.
 
 ## Examples with FS
 
-**With an html template** ![Example](./assets/exampleWfs.png)
+**With an html template**
+
+<img src="https://raw.githubusercontent.com/shiratap/ez-email/master/assets/exampleWfs.png" width="600"/>
