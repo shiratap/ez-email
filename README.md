@@ -8,7 +8,18 @@ emailing package built off of
 
 ## Getting Started
 
-### NPM Installation:
+### **Download the Example repo**
+
+Copy and paste these commands in your terminal
+
+```
+git clone https://github.com/shiratap/example-ez-email
+cd example-ez-email
+npm i
+node index.js
+```
+
+### **NPM Installation into an existing node app:**
 
 `npm i ez-email`
 
@@ -28,7 +39,8 @@ const EZE = require('ez-email');
 
 ## Recommended: Use a .env file for email credentials
 
-**ez-email function runs the dotenv method to map out .env variables**
+**ez-email function runs the dotenv method to map out .env variables, so you
+don't need to invoke the dotenv function**
 
 ```
 EMAIL={your-email-in-raw-text-here}
@@ -36,7 +48,7 @@ PASSWORD={your-password-in-raw-text-here}
 SERVICE={List is linked below} //Defaulted to gmail
 ```
 
-### [Service list](`https://nodemailer.com/smtp/well-known/`)
+### [Service list](https://nodemailer.com/smtp/well-known/)
 
 ## Gmail users: Disabling "[Less Secure App Access](https://support.google.com/accounts/answer/6010255?hl=en)"
 

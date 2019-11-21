@@ -1,6 +1,6 @@
 {
   "name": "ez-email",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "description": "ez-email is a package built to get fast email functionality in your node application",
   "main": "index.js",
   "scripts": {
