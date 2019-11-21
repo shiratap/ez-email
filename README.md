@@ -38,7 +38,10 @@ SERVICE={List is linked below} //Defaulted to gmail
 
 ### [Service list](`https://nodemailer.com/smtp/well-known/`)
 
-## Gmail users: Disabling "[Less Secure App Access]()"
+## Gmail users: Disabling "[Less Secure App Access](https://support.google.com/accounts/answer/6010255?hl=en)"
+
+Route in your browser to `https://myaccount.google.com/lesssecureapps`, and
+enable less secure apps
 
 ---
 
