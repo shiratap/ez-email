@@ -1,6 +1,6 @@
 {
   "name": "ez-email",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "ez-email is a package built to get fast email functionality in your node application",
   "main": "index.js",
   "scripts": {
@@ -14,7 +14,11 @@
     "email",
     "ez-email",
     "ez",
-    "ez email"
+    "ez email",
+    "easy",
+    "easy email",
+    "nodemailer",
+    "mail"
   ],
   "author": "shiratap",
   "license": "MIT",
