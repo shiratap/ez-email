@@ -4,8 +4,9 @@ require('dotenv').config();
 const nodemailer = require('nodemailer');
 
 module.exports = (recipients, message, emailCredentials) => {
+  let transporter;
   try {
-    const transporter = nodemailer.createTransport({
+    transporter = nodemailer.createTransport({
       service: process.env.SERVICE
         ? process.env.SERVICE
         : emailCredentials
