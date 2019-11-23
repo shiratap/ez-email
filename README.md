@@ -18,7 +18,7 @@ credientials first!
 git clone https://github.com/shiratap/example-ez-email
 cd example-ez-email
 npm i
-code .env
+code .env index.js
 node index.js
 ```
 
