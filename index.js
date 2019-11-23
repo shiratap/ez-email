@@ -4,18 +4,25 @@ require('dotenv').config();
 const nodemailer = require('nodemailer');
 
 module.exports = (recipients, message, emailCredentials) => {
-  const transporter = nodemailer.createTransport({
-    service: process.env.SERVICE
-      ? process.env.SERVICE
-      : emailCredentials
-      ? emailCredentials.service
-      : 'gmail',
-    auth: {
-      user: process.env.EMAIL || emailCredentials.email,
-      pass: process.env.PASSWORD || emailCredentials.password
-    },
-    pool: true
-  });
+  try {
+    const transporter = nodemailer.createTransport({
+      service: process.env.SERVICE
+        ? process.env.SERVICE
+        : emailCredentials
+        ? emailCredentials.service
+        : 'gmail',
+      auth: {
+        user: process.env.EMAIL || emailCredentials.email,
+        pass: process.env.PASSWORD || emailCredentials.password
+      },
+      pool: true
+    });
+  } catch (e) {
+    console.log(
+      `ez-email Error: Make sure that your email credentials live in the .env file or pass in your email credentials as the third argument\n`,
+      e
+    );
+  }
   try {
     recipients.forEach(recipient => {
       const mailOptions = {

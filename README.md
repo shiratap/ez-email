@@ -12,7 +12,7 @@ and running with little code.
 ### **Download the Example repo**
 
 Copy and paste these commands in your terminal, make sure to put in your email
-credientials in first!
+credientials first!
 
 ```
 git clone https://github.com/shiratap/example-ez-email
