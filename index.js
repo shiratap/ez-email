@@ -44,7 +44,7 @@ module.exports = (recipients, message, emailCredentials) => {
         } else if (message && message.greeting) {
           message.message = `${message.greeting} ${recipient},\n\n${message.message}`;
         }
-        if (message && message.text && message.message) {
+        if (message && message.message) {
           mailOptions.text = message.message;
         }
       }
