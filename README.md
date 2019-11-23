@@ -2,7 +2,8 @@
 
 [ez-email](https://www.npmjs.com/package/ez-email) is a fast, easy, basic
 emailing package built off of
-[nodemailer](https://www.npmjs.com/package/nodemailer)
+[nodemailer](https://www.npmjs.com/package/nodemailer). This is to get you off
+and running with little code.
 
 ---
 
@@ -10,12 +11,14 @@ emailing package built off of
 
 ### **Download the Example repo**
 
-Copy and paste these commands in your terminal
+Copy and paste these commands in your terminal, make sure to put in your email
+credientials in first!
 
 ```
 git clone https://github.com/shiratap/example-ez-email
 cd example-ez-email
 npm i
+code .env
 node index.js
 ```
 
@@ -96,9 +99,13 @@ const minimalProperties = {
 };
 ```
 
-Properties here are pretty self explanatory. Though none of these properties are
-actually required to send emails, you wouldn't be sending an email in the first
-place if you had no message to the recipient (I hope).
+The value in `greeting:` is what would come at the top of the message
+accompanied with the recipient name (if it exists in your recipient's object) or
+email string (if it doesn't).
+
+Other than that, the properties here are pretty self explanatory. Though none of
+these properties are actually required to send emails, you wouldn't be sending
+an email in the first place if you had no message to the recipient (I hope).
 
 ### **emailCredentials**
 
@@ -122,3 +129,16 @@ will give you an error if your credentials aren't correct.
 **With an html template**
 
 <img src="https://raw.githubusercontent.com/shiratap/ez-email/master/assets/exampleWfs.png" width="600"/>
+
+## Future Updates
+
+- Greeting customization for html
+- Placeholder feature in messages
+- Optimization
+- Testing
+
+Was very shocked and happy to see the amount of weekly downloads at 361 in 2
+days! Would love to contribute more features to help you guys out. Please add in
+issues to the [github repo](https://github.com/shiratap/ez-email/issues) if you
+would like to see new ideas in place, or
+[Email Me](mailto:spencerhirata@gmail.com?subject=ez-email).
